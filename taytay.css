@@ -6,3 +6,38 @@ h1.greedo {
 .bew {
   width: 400px;
 }
+
+.shake {
+  display: inline-block;
+  padding: 10px;
+}
+
+.shake:hover {
+  animation-name: shake;
+  animation-duration: 4s;
+  background-color: magenta;
+  transition: all 2s ease-in-out;
+  font-style: italic;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(20px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-40px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(40px, 0, 0);
+  }
+}
